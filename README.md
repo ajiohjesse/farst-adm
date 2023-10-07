@@ -1,40 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FarstCart Project Readme
 
-## Getting Started
+Welcome to the FarstCart project! We're thrilled to have you contribute to our project. Please take a moment to review our contribution guidelines to ensure a smooth and collaborative development process.
 
-First, run the development server:
+## Contribution Guidelines
+
+### 1. Branching Strategy
+
+- Contributors must create personal branches for their work and make pull requests (PRs) against the `dev` branch.
+- **Do not push directly to the main branch.**
+
+#### Example:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git checkout -b my-feature-branch
+# Work on your changes
+git add .
+git commit -m "feat: Add new feature"
+git push origin my-feature-branch
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Commit Pattern
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Please follow the conventional commit pattern when creating your commits. We recommend using the following format:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+#### Example:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+<type>(<scope>): <description>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<additional information (optional)>
+```
 
-## Learn More
+- `<type>` should be one of the following: feat, fix, docs, style, refactor, test, or chore
 
-To learn more about Next.js, take a look at the following resources:
+- `<scope>` (optional) is used to specify which part of the codebase your change affects.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `<description>` should be a concise summary of your change.
+- `<additional information>` (optional) can be used for more detailed information about the change, such as breaking changes, issue references, etc.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Examples:
 
-## Deploy on Vercel
+```bash
+feat(user-auth): Add login functionality
+fix(cart): Fix issue with item quantity
+docs(readme): Update contribution guidelines
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. Yarn Precommit
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Before syncing your branches with GitHub and creating a pull request, it's important to run yarn precommit. This command helps ensure that your your coded is properly formatted and linted before syncing.
+
+```bash
+yarn precommit
+```
+
+### 4. One Feature per Pull Request
+
+To keep our codebase clean and manageable, please ensure that each PR implements one feature or bug fix. If you have multiple changes to propose, create separate branches and pull requests for each feature or fix.
+
+### 5. Code Review and Approval
+
+Once you've created a pull request, our team will review your changes. Please be responsive to feedback and address any requested changes promptly. We appreciate your collaboration!
+
+## Conclusion
+
+Thank you for contributing to FarstCart! Your efforts are greatly appreciated, and together, we can make this project even better. If you have any questions or need assistance, feel free to reach out to the maintainers. Happy coding!

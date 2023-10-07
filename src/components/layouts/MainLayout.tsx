@@ -22,6 +22,7 @@ const MainLayout: React.FC<MainLayoutProps> = props => {
           className='mx-auto py-6'
           alt='farstcart logo'
           priority
+          placeholder='blur'
         />
         <div
           dir='rtl'

@@ -11,14 +11,27 @@ const AuthLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
           fill
           sizes='50vw'
           priority
-          className='object-cover '
+          className='object-cover'
+          placeholder='blur'
         />
       </div>
 
       <div className='flex flex-col items-center justify-center p-10'>
         <div className='flex flex-col items-center'>
-          <Image src={logoIcon} alt='farscart icon' width={120} />
-          <Image src={logoText} alt='farscart icon' width={300} />
+          <Image
+            src={logoIcon}
+            alt='farscart icon'
+            width={120}
+            priority
+            placeholder='blur'
+          />
+          <Image
+            src={logoText}
+            alt='farscart icon'
+            width={300}
+            priority
+            placeholder='blur'
+          />
         </div>
         {children}
       </div>

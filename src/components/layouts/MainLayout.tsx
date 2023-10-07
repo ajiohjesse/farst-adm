@@ -21,6 +21,7 @@ const MainLayout: React.FC<MainLayoutProps> = props => {
           width={184}
           className='mx-auto py-6'
           alt='farstcart logo'
+          priority
         />
         <div
           dir='rtl'
